@@ -1,7 +1,3 @@
-# create virtualenv
-virtualenv env
-source env/bin/activate
-
 # get google protocol requirements (ie. install, config)
 git clone https://github.com/google/protobuf
 cd protobuf/python
@@ -18,7 +14,5 @@ cd messages
 protoc --python_out=../buffers addressbook.proto
 cd ..
 
-# create sample data
+# create directory
 mkdir data
-touch data/addressbook.bin
-python source_data.py

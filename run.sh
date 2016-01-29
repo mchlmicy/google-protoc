@@ -1,2 +1,2 @@
-# test write action
-python write.py data/address_book.py
+# run functional code
+python main.py
