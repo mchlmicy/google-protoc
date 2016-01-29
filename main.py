@@ -1,5 +1,5 @@
 from buffers import addressbook_pb2
-from examples.read import ListPeople
+from log import ListPeople
 
 person = addressbook_pb2.Person()
 person.id = 1234
