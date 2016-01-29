@@ -17,3 +17,8 @@ touch buffers/__init__.py
 cd messages
 protoc --python_out=../buffers addressbook.proto
 cd ..
+
+# create sample data
+mkdir data
+touch data/addressbook.bin
+python source_data.py
