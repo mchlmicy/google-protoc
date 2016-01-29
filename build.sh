@@ -11,5 +11,7 @@ mv google ../..
 cd ../..
 sudo rm -r protobuf
 
-# compile proto
-bash compile_protoc.sh
+# compile protocol
+mkdir buffers
+touch buffers/__init__.py
+protoc --python_out=buffers messages/addressbook.proto

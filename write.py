@@ -1,6 +1,6 @@
 #! /usr/bin/python
 
-import protocol_buffer.addressbook_pb2
+from buffers import addressbook_pb2
 import sys
 
 # This function fills in a Person message based on user input.
