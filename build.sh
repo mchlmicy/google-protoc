@@ -14,4 +14,6 @@ sudo rm -r protobuf
 # compile protocol
 mkdir buffers
 touch buffers/__init__.py
-protoc --python_out=buffers messages/addressbook.proto
+cd messages
+protoc --python_out=../buffers addressbook.proto
+cd ..
